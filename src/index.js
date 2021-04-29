@@ -1,3 +1,4 @@
+import nav_sec from "./page-frame"
 console.log('Page is up and running');
 
 function component() {
@@ -11,3 +12,4 @@ function component() {
 }
 
 document.body.appendChild(component());
+document.body.appendChild(nav_sec);
