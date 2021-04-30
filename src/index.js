@@ -1,15 +1,17 @@
-import nav_sec from "./page-frame"
-console.log('Page is up and running');
+import '../assets/style.css';
+import * as Header from './header';
 
-function component() {
-  const element = document.createElement('div');
+const content = document.querySelector('#content');
 
- // Lodash, currently included via a script, is required for this line to work
- // Lodash, now imported by this script
-  element.innerHTML = 'Hello';
+Header.loadHeader();
 
-  return element;
+const phrase = document.createElement('p');
+phrase.textContent = 'This is the best treat';
+
+content.appendChild(phrase);
+
+const addPhrase = () => {
+  content.appendChild(phrase);
 }
 
-document.body.appendChild(component());
-document.body.appendChild(nav_sec);
+addPhrase();
