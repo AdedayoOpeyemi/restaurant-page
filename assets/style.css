@@ -19,7 +19,7 @@ header {
   width: 100%;
   border-bottom: 2px solid white;
   background-color: rgba(0,0,0,0.74);
-  padding: 0.5em;
+  /* padding: 0.5em; */
   position: relative;
   top: 0;
   height: 8em;
@@ -38,9 +38,14 @@ header > nav > ul > li {
     display: inline-flex;
     margin-right: 20px;
     font-size: 1.5em;
-    padding: 0.2em;
+    padding: 0.4em;
     border: 2px solid transparent;
     border-radius: 4px;
+    transition: transform .2s;
+}
+
+header > nav > ul > li:hover {
+  transform: scale(1.5);
 }
 
 #content {
@@ -54,4 +59,52 @@ header > nav > ul > li {
   /* width: 50%; */
   transform: translate(-50%, -50%);
   background-color: rgba(0,0,0,0.74);
+  padding: 16px;
+  /* min-width: 800px;
+  min-height: 400px */
 }
+
+.active {
+  border: 2px solid white !important;
+}
+
+button {
+  cursor: pointer;
+  align-self: flex-start;
+  width: auto;
+  padding: 0.7em;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.center {
+  margin: 0;
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  /* -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%);
+}
+/* 
+.zoom {
+  padding: 50px;
+  /* font-size: 48px !important; */
+  /* background-color: green; */
+  /* transition: transform .2s; /* Animation */
+  /* width: 200px; */
+  /* height: 100px; */
+  /* margin: 0 auto; */
+/* } */
+
+/* .zoom:hover {
+  transform: scale(1.5);
+}  */

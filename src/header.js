@@ -13,6 +13,7 @@ const loadHeader = () => {
 
   const nav = document.createElement('NAV');
   const navList = document.createElement('UL');
+  navList.setAttribute('id', 'navList')
 
   homeItem.textContent = 'Home';
   homeItem.setAttribute('id', 'home');
