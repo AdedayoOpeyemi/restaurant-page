@@ -49,19 +49,18 @@ header > nav > ul > li:hover {
 }
 
 #content {
-  /* background-color: yellow; */
   font-size: 40px;
   color: white;
-  /* height: calc(100vh - 9em); */
   position: absolute;
   top: 50%;
   left: 50%;
-  /* width: 50%; */
   transform: translate(-50%, -50%);
   background-color: rgba(0,0,0,0.74);
   padding: 16px;
-  /* min-width: 800px;
-  min-height: 400px */
+  text-align: center;
+  min-height: 30vh;
+  min-width: 30vw;
+
 }
 
 .active {
@@ -89,25 +88,10 @@ button:hover {
 .center {
   margin: 0;
   position: relative;
-  /* top: 50%; */
   left: 50%;
-  /* -ms-transform: translate(-50%, -50%); */
   transform: translate(-50%);
 }
-/* 
-.zoom {
-  padding: 50px;
-  /* font-size: 48px !important; */
-  /* background-color: green; */
-  /* transition: transform .2s; /* Animation */
-  /* width: 200px; */
-  /* height: 100px; */
-  /* margin: 0 auto; */
-/* } */
 
-/* .zoom:hover {
-  transform: scale(1.5);
-}  */
 .menuContent {
   display: flex;
 }
@@ -121,4 +105,18 @@ button:hover {
 .menuContent > ul > h3 {
   font-size: 2em;
   margin-bottom: 24px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation > p {
+  font-size: 24px;
+}
+
+.reservation > h6 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }

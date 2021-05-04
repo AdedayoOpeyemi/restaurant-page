@@ -19,8 +19,8 @@ const loadHeader = () => {
   homeItem.setAttribute('id', 'home');
   menuItem.textContent = 'Menu';
   menuItem.setAttribute('id', 'menu');
-  contactItem.textContent = 'Contact us';
-  contactItem.setAttribute('id', 'contact');
+  contactItem.textContent = 'Reservation';
+  contactItem.setAttribute('id', 'reservation');
 
   navList.appendChild(homeItem);
   navList.appendChild(menuItem);

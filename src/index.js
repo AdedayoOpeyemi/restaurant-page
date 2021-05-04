@@ -1,7 +1,8 @@
 import '../assets/style.css';
 import * as Header from './header';
 import * as Home from './headlinePage';
-import loadMenuPage from './menuPage'
+import loadMenuPage from './menuPage';
+import loadReservationPage from './reservationPage';
 
 const content = document.querySelector('#content');
 
@@ -21,6 +22,11 @@ Header.homeItem.addEventListener('click', () => {
 Header.menuItem.addEventListener('click', () => {
   cleanDOM();
   loadMenuPage();
+})
+
+Header.contactItem.addEventListener('click', () => {
+  cleanDOM();
+  loadReservationPage();
 })
 
 

@@ -7,7 +7,6 @@ const loadMenuPage = () => {
   const mealItems = ['Jollof rices', 'Fried rice', 'Spagethi', 'Macaronni'];
 
   const navList = document.querySelector('nav > ul').childNodes
-  // const navList = nav.childNodes;
   const activeButton = document.querySelector('#menu');
   for (let i = 0; i < navList.length; i += 1) {
     navList[i].classList.remove('active');
