@@ -8,23 +8,19 @@ const loadHomePage = () => {
   const catchPhrase = document.createElement('P');
   const headLine = document.createElement('H2');
 
-  const navList = document.querySelector('#navList').childNodes
+  const navList = document.querySelector('#navList').childNodes;
   const activeButton = document.querySelector('#home');
   for (let i = 0; i < navList.length; i += 1) {
     navList[i].classList.remove('active');
   }
- 
 
   activeButton.classList.add('active');
   menuHome.classList.add('center');
-  
 
   headLine.textContent = 'Hungry?!';
   catchPhrase.innerText = 'We have got something \n fresh, yummy and delicious';
   menuHome.innerText = 'View our Menu';
-  menuHome
-  elements.append(headLine, catchPhrase,  menuHome);
-
+  elements.append(headLine, catchPhrase, menuHome);
   content.appendChild(elements);
 };
 

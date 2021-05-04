@@ -1,18 +1,15 @@
 const content = document.querySelector('#content');
 
 const loadMenuPage = () => {
-
   const drinkItems = ['Coca-cola', 'Pepsi', 'Smoov', 'BCocktail', 'Red Wine'];
   const pastryItems = ['Burger', 'Meat-Pie', 'Donuts', 'Sausage', 'Pizza'];
   const mealItems = ['Jollof rices', 'Fried rice', 'Spagethi', 'Macaronni'];
 
-  const navList = document.querySelector('nav > ul').childNodes
+  const navList = document.querySelector('nav > ul').childNodes;
   const activeButton = document.querySelector('#menu');
   for (let i = 0; i < navList.length; i += 1) {
     navList[i].classList.remove('active');
   }
-  
-
 
   activeButton.classList.add('active');
 
@@ -25,8 +22,6 @@ const loadMenuPage = () => {
   const drinksTitle = document.createElement('H3');
   drinksTitle.innerText = 'Drinks';
   drinks.appendChild(drinksTitle);
-  console.log(drinksTitle);
-  console.log(drinks);
 
   const pastry = list.cloneNode(false);
   const pastryTitle = document.createElement('H3');
@@ -40,8 +35,6 @@ const loadMenuPage = () => {
 
   const menuLists = [drinks, pastry, meals];
 
-  
-
   const menuListBuilder = (menu, item) => {
     const li = document.createElement('LI');
     li.innerText = item;
@@ -49,11 +42,9 @@ const loadMenuPage = () => {
     return true;
   };
 
-  drinkItems.map(item => menuListBuilder(drinks, item));
-  pastryItems.map(item => menuListBuilder(pastry, item));
-  mealItems.map(item => menuListBuilder(meals, item));
-
-  console.log(menuLists);
+  drinkItems.map((item) => menuListBuilder(drinks, item));
+  pastryItems.map((item) => menuListBuilder(pastry, item));
+  mealItems.map((item) => menuListBuilder(meals, item));
 
   pageContent.append(...menuLists);
   content.appendChild(pageContent);

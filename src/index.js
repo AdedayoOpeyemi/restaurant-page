@@ -19,16 +19,20 @@ Header.homeItem.addEventListener('click', () => {
   Home.loadHomePage();
 });
 
+Header.brandLogo.addEventListener('click', () => {
+  cleanDOM();
+  Home.loadHomePage();
+});
+
 Header.menuItem.addEventListener('click', () => {
   cleanDOM();
   loadMenuPage();
-})
+});
 
 Header.contactItem.addEventListener('click', () => {
   cleanDOM();
   loadReservationPage();
-})
-
+});
 
 // const phrase = document.createElement('p');
 // phrase.textContent = 'This is the best treat';

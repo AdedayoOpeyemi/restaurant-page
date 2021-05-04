@@ -18,8 +18,7 @@ body {
 header {
   width: 100%;
   border-bottom: 2px solid white;
-  background-color: rgba(0,0,0,0.74);
-  /* padding: 0.5em; */
+  background-color: rgba(0, 0, 0, 0.74);
   position: relative;
   top: 0;
   height: 8em;
@@ -35,13 +34,13 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    display: inline-flex;
-    margin-right: 20px;
-    font-size: 1.5em;
-    padding: 0.4em;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: transform .2s;
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: 1.5em;
+  padding: 0.4em;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.2s;
 }
 
 header > nav > ul > li:hover {
@@ -55,12 +54,11 @@ header > nav > ul > li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0,0,0,0.74);
+  background-color: rgba(0, 0, 0, 0.74);
   padding: 16px;
   text-align: center;
   min-height: 30vh;
   min-width: 30vw;
-
 }
 
 .active {
@@ -96,7 +94,7 @@ button:hover {
   display: flex;
 }
 
-.menuContent ul{
+.menuContent ul {
   list-style: none;
   text-align: center;
   padding: 1em;
