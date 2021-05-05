@@ -2,7 +2,7 @@
 
 > Restaurant Homepage with Tabbed Navigation.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
 
 - This project is to demonstrate the use of ES6 and Webpack.
 
