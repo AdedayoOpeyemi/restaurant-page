@@ -33,14 +33,3 @@ Header.contactItem.addEventListener('click', () => {
   cleanDOM();
   loadReservationPage();
 });
-
-// const phrase = document.createElement('p');
-// phrase.textContent = 'This is the best treat';
-
-// content.appendChild(phrase);
-
-// const addPhrase = () => {
-//   content.appendChild(phrase);
-// }
-
-// addPhrase();
