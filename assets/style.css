@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./index.jpg');
+  background-color: #3f3f3f;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.74);
+  position: relative;
+  top: 0;
+  height: 8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8em;
+  padding-left: 8em;
+}
+
+header > nav > ul {
+  list-style: none;
+}
+
+header > nav > ul > li {
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: 1.5em;
+  padding: 0.4em;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+header > nav > ul > li:hover {
+  transform: scale(1.5);
+}
+
+#content {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.74);
+  padding: 16px;
+  text-align: center;
+  min-height: 30vh;
+  min-width: 30vw;
+}
+
+.active {
+  border: 2px solid white !important;
+}
+
+button {
+  cursor: pointer;
+  align-self: flex-start;
+  width: auto;
+  padding: 0.7em;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.center {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.menuContent {
+  display: flex;
+}
+
+.menuContent ul {
+  list-style: none;
+  text-align: center;
+  padding: 1em;
+}
+
+.menuContent > ul > h3 {
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation > p {
+  font-size: 24px;
+}
+
+.reservation > h6 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
